@@ -3,11 +3,11 @@
     <h1>{{ msg }}</h1>
     <v-stepper v-model="step">
       <v-stepper-header>
-        <v-stepper-step :complete="step > 1" step="1">Phase 1</v-stepper-step>
+        <v-stepper-step :complete="step > 1" step="1">Select Year</v-stepper-step>
         <v-divider></v-divider>
-        <v-stepper-step :complete="step > 2" step="2">Phase 2</v-stepper-step>
+        <v-stepper-step :complete="step > 2" step="2">Select Make</v-stepper-step>
         <v-divider></v-divider>
-        <v-stepper-step step="3">Phase 3</v-stepper-step>
+        <v-stepper-step step="3">Select Model</v-stepper-step>
       </v-stepper-header>
       <v-stepper-items>
         <v-stepper-content step="1">
@@ -61,18 +61,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 </style>
