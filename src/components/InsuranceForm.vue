@@ -3,11 +3,11 @@
     <h1>{{ msg }}</h1>
     <v-stepper v-model="step">
       <v-stepper-header>
-        <v-stepper-step :complete="step > 1" step="1">Name of step 1</v-stepper-step>
+        <v-stepper-step :complete="step > 1" step="1">Phase 1</v-stepper-step>
         <v-divider></v-divider>
-        <v-stepper-step :complete="step > 2" step="2">Name of step 2</v-stepper-step>
+        <v-stepper-step :complete="step > 2" step="2">Phase 2</v-stepper-step>
         <v-divider></v-divider>
-        <v-stepper-step step="3">Name of step 3</v-stepper-step>
+        <v-stepper-step step="3">Phase 3</v-stepper-step>
       </v-stepper-header>
       <v-stepper-items>
         <v-stepper-content step="1">
